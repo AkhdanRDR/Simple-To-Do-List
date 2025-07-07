@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Start -->
+    <nav>
+      <div class="nav-container">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="46"
+          height="46"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="#feffe7"
+            d="M3 5h6v6H3zm2 2v2h2V7zm6 0h10v2H11zm0 8h10v2H11zm-6 5l-3.5-3.5l1.41-1.41L5 17.17l4.59-4.58L11 14z"
+          />
+        </svg>
+        <span>To-Do Awesome</span>
+      </div>
+    </nav>
+    <!-- Navigation End -->
+
+    <h1 id="title">My Awesome To-Do List</h1>
+
+    <!-- Field Tugas -->
+    <form>
+      <input class="add-task" type="text" placeholder="Tambah Tugas" />
+      <button type="submit">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="35"
+          height="35"
+          viewBox="0 0 24 24"
+        >
+          <path fill="#442904" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z" />
+        </svg>
+      </button>
+    </form>
+    <!-- Error message element -->
+    <div class="error-message"></div>
+    <!-- Field End -->
+
+    <!-- Container Tugas -->
+    <div id="task-container"></div>
+    <!-- Container End -->
+
+    <!-- Tugas Kosong -->
+    <div id="no-task">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="166"
+        height="166"
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill="#895F0A"
+          d="M23 4.5C23 6.43 21.43 8 19.5 8S16 6.43 16 4.5S17.57 1 19.5 1S23 2.57 23 4.5M19.5 10H19v9H5V5h9.03C14 4.84 14 4.67 14 4.5c0-.5.08-1 .21-1.5H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14c1.11 0 2-.89 2-2V9.79c-.5.13-1 .21-1.5.21"
+        />
+      </svg>
+      <h2>Belum ada tugas hari ini!</h2>
+    </div>
+
+    <!-- JavaScript Func -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
